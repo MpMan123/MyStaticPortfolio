@@ -3,4 +3,5 @@
 ## Create a frame to design web
 - Open Command Prompt
 ``` shell
-npm create@latest
+npm create vite@latest
+

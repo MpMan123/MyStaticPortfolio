@@ -1,0 +1,44 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+}
+
+main {
+  padding: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    display: flex;
+    gap: 2rem;
+  }
+  section {
+    flex: 1;
+  }
+}
