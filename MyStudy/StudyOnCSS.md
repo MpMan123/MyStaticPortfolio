@@ -72,6 +72,9 @@ Main syntax `flex-wrap:wrap`
 
 ### Shrink and expand Items
 Allowed to shrink when the container is too small
+
 Main syntax `flex-shrink:number` and `flex-grow:number`
+
 Items will shrink `number/total * original size` 
+
 Items will expand `number/total * extra space`
