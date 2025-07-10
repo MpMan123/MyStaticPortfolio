@@ -78,3 +78,6 @@ Main syntax `flex-shrink:number` and `flex-grow:number`
 Items will shrink `number/total * original size` 
 
 Items will expand `number/total * extra space`
+
+### Flex basis
+Specifies the initial size of the item (px, em, %)
