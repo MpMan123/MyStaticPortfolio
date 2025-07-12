@@ -81,6 +81,7 @@ Main syntax: `tagname { .... }`
 ## Links
 Main syntax `<a href="url" link text </a>`
 - Specifying where to open the linked document `<a href="url" target="..">....</a>`
+  
 | **Open in**     | **target** |
 |-----------------|------------|
 | Same window/tab |    _self   |
