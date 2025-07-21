@@ -14,6 +14,8 @@ background: linear-gradient(175deg, rgba(245, 232, 118, 1) 0%, rgba(176, 218, 25
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size:cover;
+    line-height: 1.6;
+    font-size:16px;
     /* width:960px; */
 }
 
@@ -51,16 +53,17 @@ background: linear-gradient(175deg, rgba(245, 232, 118, 1) 0%, rgba(176, 218, 25
     font-weight: 600;
 }
 
-.contact ul {
-    list-style: none;
+.contact-container {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 0.9rem;
-    word-break: break-all;
 }
-.contact ul li span {
-    font-weight: 600;
+
+.contact-part {
+    flex: 1 1 50%;
+    align-items: flex-start;
+}
+
+.contact-part ul {
+    list-style-type: none;
 }
 
 section h2 {
@@ -103,7 +106,7 @@ section h2 {
     }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     main {
         display: flex;
         gap: 2rem;
@@ -111,4 +114,9 @@ section h2 {
     section {
         flex: 1;
     }
+}
+
+h2.head {
+    font-size:24px;
+    margin-bottom: 10px;
 }
