@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaden's Blog</title>
     <meta name="description" content="Jaden's Blog about his studies and projects">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/5aab9699be.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,50 +15,56 @@
         <div class="container nav">
             <a href="index.html" class="logo">Jaden's Blog</a>
             <ul class="nav-links">
-                <li>Contact</li>
-                <li><a href="index.html"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="about.html"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="projects.html"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="blog.html"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="contact.html"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.facebook.com/mai.phuoc.567812/" target="_blank"><img
+                            src="assets/facebook-brands-solid-full.svg" alt="Facebook" class="nav-icon"></a></li>
+                <li><a href="https://github.com/MpMan123" target="_blank"><img src="assets/github-brands-solid-full.svg"
+                            alt="Github" class="nav-icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/ph%C6%B0%E1%BB%9Bc-mai-07784232b/" target="_blank"><img
+                            src="assets/linkedin-brands-solid-full.svg" alt="Linkedin" class="nav-icon"></a></li>
+                <li>
+                    <img src="assets/envelope-solid-full.svg" alt="Email" class="nav-icon" onclick="copyEmail()">
+                    <span class="tooltip" id="copyTooltip">Click to copy</span>
+                </li>
             </ul>
         </div>
     </header>
-
     <div class="main-container">
 
-        <section class="hero-section" style="padding: 120px 0 80px; text-align: center;">
+        <section class="hero-section" style="padding: 100px 0 60px; text-align: center;">
             <h1 style="font-size: 4.5rem; margin-bottom: 24px;">Jaden's Blog</h1>
-            <p style="font-size: 1.4rem; max-width: 700px; margin: 0 auto 40px; color: var(--text-muted);">
-                Hi, I'm Jaden. I'm a student at the University of Technology of National University of Malaysia. I'm
+            <p style="font-size: 1.4rem; max-width: 700px; margin: 0 auto 40px; color: var(--text-color);">
+                Hi, I'm Jaden. I'm a student at the University of Technology. I'm
                 currently studying
                 Computer Science and I'm passionate about Web development, Security, and Operations.
             </p>
-            <div style="display: flex; gap: 20px; justify-content: center;">
+            <!-- <div style="display: flex; gap: 20px; justify-content: center;">
                 <a href="projects.html"
                     style="background: var(--primary-color); color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: 600; transition: var(--transition);">Explore
                     Projects</a>
                 <a href="contact.html"
                     style="border: 2px solid var(--primary-color); color: var(--primary-color); padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: 600; transition: var(--transition);">Book
                     Consult</a>
-            </div>
+            </div> -->
         </section>
 
         <section class="projects-section">
-            <div style="text-align: center; margin-bottom: 60px;">
-                <span
-                    style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; color: var(--secondary-color); font-weight: 600;">Our
-                    Specialties</span>
-                <h2 style="font-size: 3rem; margin-top: 10px;">Tailored to your <span
-                        style="font-style: italic;">Vitality</span></h2>
-            </div>
             <div class="services-grid">
+                <a href="#" class="service-card">
+                    <div class="service-icon"><img src="assets/book-solid-full.svg" alt="Book"></div>
+                    <h3>Pwnable Diary</h3>
+                    <p class="summary">A diary for pentesters</p>
+                    <div class="details">
+                        <p>With Pwnable Diary, I upload my pentesting notes and share them with the community.</p>
+                        <span class="read-more">View Diary &rarr;</span>
+                    </div>
+                </a>
                 <!-- Service Box 1 -->
                 <a href="#" class="service-card">
                     <div class="service-icon">🌿</div>
-                    <h3>Holistic Healing</h3>
-                    <p class="service-summary">Pure natural treatments for your body's vital essence.</p>
-                    <div class="service-details">
+                    <h3>Pwnable Diary</h3>
+                    <p class="summary">Pure natural treatments for your body's vital essence.</p>
+                    <div class="details">
                         <p>Our holistic approach combines ancient wisdom with modern science to restore your natural
                             balance. Experience the power of herbal infusions and rhythmic massage.</p>
                         <span class="read-more">Book a Session &rarr;</span>
@@ -69,8 +75,8 @@
                 <a href="#" class="service-card">
                     <div class="service-icon">🧘</div>
                     <h3>Mindfulness</h3>
-                    <p class="service-summary">Find your inner peace through guided meditation.</p>
-                    <div class="service-details">
+                    <p class="summary">Find your inner peace through guided meditation.</p>
+                    <div class="details">
                         <p>Cultivate awareness and reduce stress with our expert-led mindfulness journeys. Tailored
                             programs for both beginners and experienced practitioners.</p>
                         <span class="read-more">Join a Class &rarr;</span>
@@ -81,8 +87,8 @@
                 <a href="#" class="service-card">
                     <div class="service-icon">🥗</div>
                     <h3>Soul Nutrition</h3>
-                    <p class="service-summary">Nourish your soul with organic, balanced nutrition.</p>
-                    <div class="service-details">
+                    <p class="summary">Nourish your soul with organic, balanced nutrition.</p>
+                    <div class="details">
                         <p>Explore our seasonal, plant-based nutrition plans designed to boost energy and mental
                             clarity. Personalized consultations available.</p>
                         <span class="read-more">View Plans &rarr;</span>
@@ -93,8 +99,8 @@
                 <a href="#" class="service-card">
                     <div class="service-icon">💎</div>
                     <h3>Crystal Therapy</h3>
-                    <p class="service-summary">Energy alignment using premium natural crystals.</p>
-                    <div class="service-details">
+                    <p class="summary">Energy alignment using premium natural crystals.</p>
+                    <div class="details">
                         <p>Utilize the vibrational frequencies of carefully selected stones to clear blockages and
                             enhance your spiritual wellbeing.</p>
                         <span class="read-more">Discover Crystals &rarr;</span>
@@ -105,8 +111,8 @@
                 <a href="#" class="service-card">
                     <div class="service-icon">🌊</div>
                     <h3>Hydro-Revive</h3>
-                    <p class="service-summary">Total body rejuvenation through water therapy.</p>
-                    <div class="service-details">
+                    <p class="summary">Total body rejuvenation through water therapy.</p>
+                    <div class="details">
                         <p>Immerse yourself in our mineral-rich thermal baths and sensory deprivation tanks for the
                             ultimate recovery and muscle relief.</p>
                         <span class="read-more">Experience Water &rarr;</span>
@@ -117,8 +123,8 @@
                 <a href="#" class="service-card">
                     <div class="service-icon">🌬️</div>
                     <h3>Breathe Well</h3>
-                    <p class="service-summary">Advanced breathwork for mental and physical clarity.</p>
-                    <div class="service-details">
+                    <p class="summary">Advanced breathwork for mental and physical clarity.</p>
+                    <div class="details">
                         <p>Learn specialized breathing techniques to master your nervous system, improve oxygenation,
                             and find immediate calm.</p>
                         <span class="read-more">Start Breathing &rarr;</span>

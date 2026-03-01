@@ -49,4 +49,47 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
 });
+
+function copyEmail() {
+    const email = "mhp230306@gmail.com";
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(email)
+            .then(() => {
+                const tooltip = document.getElementById('copyTooltip');
+                tooltip.innerText = 'Copied!';
+                setTimeout(() => {
+                    tooltip.innerText = 'Click to copy';
+                }, 2000);
+            })
+            .catch(err => {
+                console.error("Copy failed:", err);
+                fallbackCopyTextToClipboard(email);
+            });
+    } else {
+        fallbackCopyTextToClipboard(email);
+    }
+}
+
+function fallbackCopyTextToClipboard(text) {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+        const successful = document.execCommand('copy');
+        const tooltip = document.getElementById('copyTooltip');
+        tooltip.innerText = 'Copied!';
+        setTimeout(() => {
+            tooltip.innerText = 'Click to copy';
+        }, 2000);
+        if (!successful) {
+            alert("Unable to copy email. Please manually copy: " + text);
+        }
+    } catch (err) {
+        alert("Unable to copy email. Please manually copy: " + text);
+    }
+    document.body.removeChild(textArea);
+}
