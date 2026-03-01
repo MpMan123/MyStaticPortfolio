@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Naturel Wellness</title>
+    <meta name="description"
+        content="Get in touch with us to book a session, ask about our treatments, or visit our wellness sanctuary.">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: 'PT Serif';
+            font-size: 1rem;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo">NATUREL</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container" data-reveal>
+                <h1 style="font-size: 4rem;">Connect With <span
+                        style="font-style: italic; color: var(--secondary);">Us</span></h1>
+                <p>We're here to help you start your journey to better health. Reach out for a consultation or visit our
+                    sanctuary.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid">
+                    <div data-reveal>
+                        <h2 style="margin-bottom: 2rem;">Send a Message</h2>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="E.g. Jane Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="jane@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Interested In</label>
+                                <input type="text" id="service" placeholder="Select a service">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Inquiry</button>
+                        </form>
+                    </div>
+
+                    <div data-reveal>
+                        <h2 style="margin-bottom: 2rem;">Visit the Sanctuary</h2>
+                        <div class="card">
+                            <h4 style="margin-bottom: 1rem;">Location</h4>
+                            <p style="color: var(--text-muted); margin-bottom: 2rem;">123 Wellness Way, Soul City,
+                                90210<br>Private Valet Parking Available</p>
+
+                            <h4 style="margin-bottom: 1rem;">Hours of Care</h4>
+                            <ul style="color: var(--text-muted);">
+                                <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                    <span>Mon - Fri</span><span>08:00 - 20:00</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                    <span>Saturday</span><span>09:00 - 18:00</span>
+                                </li>
+                                <li style="display: flex; justify-content: space-between;">
+                                    <span>Sunday</span><span>Closed</span>
+                                </li>
+                            </ul>
+
+                            <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Direct Contact</h4>
+                            <p style="color: var(--text-muted);">hello@naturelwellness.com<br>+1 (555) 123-4567</p>
+                        </div>
+                        <div
+                            style="height: 250px; background: #eee; border-radius: 20px; margin-top: 2.5rem; position: relative;">
+                            <p
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #999; font-style: italic;">
+                                Interactive Map Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h4 class="logo" style="color: #fff;">NATUREL</h4>
+                    <p style="color: #888;">Dedicated to providing premium health and wellness experiences through
+                        nature-inspired science.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="color: #888;">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="services.html">Specialties</a></li>
+                        <li><a href="blog.html">Latest News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p style="color: #888;">123 Wellness Way<br>Soul City, 90210<br>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Naturel Wellness. All rights reserved. Crafted with care.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
